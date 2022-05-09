@@ -1,6 +1,7 @@
 class Solution {
 public:
     string longestPalindrome(string s) {
+        // Manacher's Algorithm  Time:O(n)
         int n = s.size();
         string s_bar = "|";
         for (int i = 0; i < n; i++){
